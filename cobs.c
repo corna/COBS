@@ -17,6 +17,8 @@
 
 #include "cobs.h"
 
+#define COBS_MAX_OFFSET 0xFE
+
 size_t cobs_encode(const uint8_t * const data_in, size_t length_in,
                    uint8_t * const data_out, const uint8_t reserved_value)
 {
